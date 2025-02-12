@@ -23,5 +23,6 @@ This is where OpenCV enters, with a bit of a magic, it detects the contours of y
 
 ## Hexagonal map generation with a video
 
-If you are trully bored, you can just gave it a video and see the visual effect that it will have with this generator haha.
+If you are trully bored, you can just gave it a video and see the visual effect that it will have with this generator haha. The parameters will affect the result as well in runtime, but you could not save the result.
 
+![hexagonal_map_generator_3](https://github.com/user-attachments/assets/d74769b9-9e41-486f-84f2-3a4b10839bf4)

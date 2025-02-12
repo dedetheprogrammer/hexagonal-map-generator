@@ -1,4 +1,5 @@
 # hexagonal-map-generator
 A hexagonal map generator made with OpenCV and JavaScript.
 
-![image](https://github.com/user-attachments/assets/de1b8633-fd2b-4770-b4af-12bb205474fc)
+![hexagonal_map_generator_1](https://github.com/user-attachments/assets/dfc21001-73f9-4392-babb-f680dbc1e93d)
+

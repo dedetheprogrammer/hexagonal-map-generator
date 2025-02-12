@@ -11,6 +11,7 @@
         
         :root {
             --section-margin: 15px;
+            --main-section-options-width: 420px;
         }
 
         * {
@@ -47,18 +48,19 @@
 
         #main-sections {
             width: calc(100% - 6px);
-            height: 100%;
-            display: inline-flex;
+            height: fit-content;
+            display: flex;
             border: solid 3px #7c7c7c9a;
             border-bottom-width: 5px;
             border-radius: 10px;
             background-color: #dddddd;
-            gap: 15px;
         }
         #main-sections-before {
-            width: 100%;
+            width: calc(100% - 2 * 15px);
+            height: fit-content;
             padding: 15px;
-            display: inline-flex;
+            display: flex;
+            flex-wrap: wrap;
             border-top: solid 3px #ffffff; 
             border-radius: 7px;
             background-color: #dddddd;
@@ -66,8 +68,8 @@
         }
 
         #main-section-options {
-            width: 100%; /* Se ajusta al ancho disponible */
-            max-width: 420px; /* Limita el ancho a 500px */
+            width: 100%;
+            max-width: var(--main-section-options-width);
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -124,8 +126,9 @@
         }
 
         #main-section-canvases {
-            width: 100%;
-            height: 100%;
+            width: calc(100% - var(--main-section-options-width) - 15px);
+            min-width: var(--main-section-options-width);
+            height: 811px;
             display: flex;
         }
         #main-section-canvases-canvas-main {
@@ -140,6 +143,14 @@
         }
         #main-section-canvases-canvas-main canvas {
             height: 100%;
+        }
+
+        @media (max-width: 930px) {
+            #main-sections-before {
+                flex-direction: column-reverse;
+            }
+
+
         }
     </style>
 </head>
